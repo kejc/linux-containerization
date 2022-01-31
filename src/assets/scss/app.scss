@@ -1,0 +1,29 @@
+@use '_variables.scss' as v;
+@use '_reset.scss';
+
+// General
+body {
+  font-family: sans-serif;
+}
+
+// Header
+#site-header {
+  align-items: center;
+  background: yellow;
+  display: flex;
+  height: v.$header-height;
+  padding: 0 v.$default-padding;
+}
+
+// Content Overview
+#content-overview {
+  background: red;
+  bottom: 0;
+  height: calc(100vh - v.$header-height);
+  left: 0;
+  max-width: v.$sidebar-maxWidth;
+  padding: v.$default-padding;
+  width: v.$sidebar-width;
+  position: fixed;
+}
+
